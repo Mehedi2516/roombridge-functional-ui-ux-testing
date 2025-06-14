@@ -2,7 +2,9 @@
 
 ## 📋 Task Overview
 
-This repository contains the Quality Assurance deliverables for the **RoomBridge Projcet**. The objective was to perform full functional testing, graphical interface validation, and usability evaluation for specific modules of the RoomBridge web application.
+This repository contains the Quality Assurance deliverables for the **RoomBridge test task**. The objective was to perform full functional testing, graphical interface validation, and usability evaluation for specific modules of the RoomBridge web application.
+
+---
 
 ## 🔬 Types of Testing Performed
 
@@ -12,6 +14,7 @@ This repository contains the Quality Assurance deliverables for the **RoomBridge
 - ✅ Bug Reporting with detailed reproduction steps
 - ✅ Minor Performance/Responsiveness checks
 
+---
 
 ## 🐞 Bug Reporting
 
@@ -25,6 +28,8 @@ Bugs and issues were documented and structured as per standard QA practice. Each
 - Suggested fix (if applicable)
 
 All bugs were reported via **Jira**.
+
+---
 
 ## 🧠 Usability Feedback
 
