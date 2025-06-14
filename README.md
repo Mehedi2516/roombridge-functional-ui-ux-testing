@@ -1,4 +1,4 @@
-# 🧪 RoomBridge QA Test Task
+# 🧪 RoomBridge Web Applicatio Full Testing
 
 ## 📋 Task Overview
 
