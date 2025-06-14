@@ -1,0 +1,468 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project description,Project url,Priority,Resolution,Assignee,Reporter,Creator,Created,Updated,Last Viewed,Resolved,Affects Version/s,Fix Version/s,Component/s,Due Date,Votes,Labels,Description,Environment,Watchers,Log Work,Original Estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Attachment,Attachment,Custom field ((backup) Browser/s),Custom field ((backup) Exists in the current implementation?),Custom field ((backup) External issue ID - old),Custom field ((backup) Integrator),Custom field ((backup) Issue Occurred On),Custom field ((backup) Issue Status Comment),Custom field ((backup) Platform),Custom field ((backup) Root of the problem),Custom field ((backup) Test Type),Custom field ((backup) Test case priority),Custom field ((backup) Type of Issue),Custom field ((backup) Work Type),"Custom field ((backup, del) Test tasks)","Custom field ((tmp, del) Build/s)","Custom field ((tmp, del?) TestCase Link)",Custom field (Account),Custom field (Actual Result),Custom field (Affected Test Cases),Custom field (Affects Build/s),Custom field (Asana link),Custom field (BT Jira ID),Custom field (BT Project),Custom field (Basecamp Link),Custom field (Billable Category),Custom field (Browser),Custom field (Browser / Environment),Custom field (Browser Version),Custom field (Build/s),Custom field (Business Unit),Custom field (CQ ID),Custom field (CS Project Coordinator),Custom field (Case Study necessity postpone date),Custom field (Client Device),Custom field (Client Device Version),Custom field (Cloud Version),Custom field (Core issue),Custom field (Created By),Custom field (Development),Custom field (End Date),Custom field (Epic Link),Custom field (Epic/Theme),Custom field (Error Type),Custom field (Expected Result),Custom field (Flagged),Custom field (Found by),Custom field (Functionality Changes?),Custom field (Handled By (SGW Tester)),Custom field (Hardware Version),Custom field (Impact),Custom field (Impacted Areas),Custom field (Importance),Custom field (Iteration),Custom field (Level),Custom field (New Original Estimate),Custom field (Next Step),Custom field (Number of candidates),Custom field (Occurrence),Custom field (Original story points),Custom field (Parent Link),Custom field (Partner Contact),Custom field (Payment Status),Custom field (Planned Efforts (FTE)),Custom field (Priority Level),Custom field (Proxy Required),Custom field (RFX Coordinator),Custom field (Rank),Custom field (Rank (Obsolete)),Custom field (Regional Coordinator),Custom field (Related Cases),Custom field (Reported Version),Custom field (Request Info From),Custom field (Revised),Custom field (Router),Custom field (SF Case No),Custom field (SGW Jira ID),Custom field (Severity/Importance),Custom field (Share with),Custom field (Solution),Sprint,Custom field (Start Date),Custom field (Supervisor),Custom field (TVS ID),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Team),Custom field (Team Role),Custom field (Test Type),Custom field (TestLink case),Custom field (Time Category),Custom field (To Attention Of),Custom field (Type of engagement),Custom field (URL),Custom field (Users),Custom field (Version To Fix),Custom field (WSJF),Custom field (Wiki Link),Custom field (Wires Link),Custom field (ZendeskID),Custom field (Обеспечение оборудованием),Comment,Comment,Comment,Comment
+"Details page: ""Bedrooms quantity"" and ""Bathrooms quantity"" dropdowns contain and accept fractional values (e.g., 1.5, 2.5)",QATC-924373,3830900,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,22/May/25 11:30 PM,25/May/25 1:15 PM,14/Jun/25 2:49 PM,25/May/25 1:15 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Go to the Details page
+
+ # Locate the drop-downs for Bedrooms quantity and Bathrooms quantity
+
+ # Click the dropdown and observe available values
+
+ # Select a fractional value like 1.5 or 2.5
+
+*Actual result:* ""Bedrooms quantity"" and ""Bathrooms quantity"" dropdowns contain and accept fractional values (e.g., 1.5, 2.5) - see here [^Video 2025-05-23 02.29.19.mp4]
+
+*Expected result:* Only whole number values (positive integers) should be shown and accepted, as room quantities should not be fractional","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,"22/May/25 11:29 PM;m13.hasan;Video 2025-05-23 02.29.19.mp4;https://jira.a1qa.com/secure/attachment/2647070/Video+2025-05-23+02.29.19.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|if3b94:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,
+Sign-Up page: Password field accepts only 20 characters instead of the specified 32-character limit,QATC-924188,3830586,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,22/May/25 4:30 PM,25/May/25 7:15 PM,14/Jun/25 2:49 PM,25/May/25 1:21 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to the Sign-Up page on the application
+
+ # In the Password field, attempt to enter a password longer than 20 characters
+
+ # Observe when input stops registering characters
+
+*Actual result:* Password field accepts only 20 characters instead of the specified 32-character limit - see here [^Video 2025-05-22 19.21.40.mp4]
+
+*Expected result:* The Password field should allow up to 32 characters as specified in the requirements to support strong password creation","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,"22/May/25 4:29 PM;m13.hasan;Video 2025-05-22 19.21.40.mp4;https://jira.a1qa.com/secure/attachment/2646766/Video+2025-05-22+19.21.40.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if39bk:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,"25/May/25 1:21 PM;e.sheremetyev;average;;;","25/May/25 7:15 PM;m13.hasan;Understood mentor;;;",,
+"Sign-Up page: First Name, Last Name and Email Address fields exceed the maximum allowed character as specified",QATC-924181,3830570,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,22/May/25 4:19 PM,25/May/25 7:15 PM,14/Jun/25 2:49 PM,25/May/25 1:22 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Enter a value in the First Name field with more than 25 characters
+
+ # Enter a value in the Last Name field with more than 25 characters
+
+ # Enter an email address longer than 30 characters 
+
+ # Enter a password
+ # Click on Create Account
+
+ 
+
+*Actual result:* First Name, Last Name, and Email Address fields exceed the maximum allowed character as specified - see here [^Video 2025-05-22 18.29.14.mp4]
+
+*Expected result:* 
+ * First Name and Last Name fields should restrict input to 1–25 character limit
+
+ * Email Address field should restrict the length between 6 and 30 characters limit
+
+ * Input exceeding these limits should be blocked or trigger a clear validation warning","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,"22/May/25 4:19 PM;m13.hasan;Video 2025-05-22 18.29.14.mp4;https://jira.a1qa.com/secure/attachment/2646751/Video+2025-05-22+18.29.14.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if3980:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,"25/May/25 1:22 PM;e.sheremetyev;average;;;","25/May/25 7:15 PM;m13.hasan;Understood mentor;;;",,
+"Sign-Up Page: ""Create Account"" button shows visual glitches when clicked with empty name fields",QATC-924163,3830429,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,22/May/25 3:19 PM,25/May/25 1:21 PM,14/Jun/25 2:49 PM,25/May/25 1:21 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to the Sign Up page
+ # Provide all the information except the Name field to create an account
+ # Click the ""Create Account"" button - see here [^Video 2025-05-22 18.18.11.mp4]
+
+*Actual result:* The ""Create Account"" button shows visual glitches when clicked, and this behavior only occurs when ** First Name and Last Name are left empty
+
+*Expected result:* The ""Create Account"" button should respond visually in a consistent manner when hovered or clicked, without showing any distortion or misalignment","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,"22/May/25 3:19 PM;m13.hasan;Video 2025-05-22 18.18.11.mp4;https://jira.a1qa.com/secure/attachment/2646709/Video+2025-05-22+18.18.11.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|if38co:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,
+"RoomBridge Website: Browser tab bar displays ""Company Name"" instead of site name and subpage titles while navigating",QATC-924152,3830408,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,22/May/25 2:48 PM,25/May/25 7:15 PM,14/Jun/25 2:49 PM,25/May/25 1:20 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Hover over the browser tab bar to view the tooltip text
+ # Navigate to different subpages (e.g., Sign-Up, Listings, Profile) and view the information
+
+*Actual result:* Browser tab bar displays ""Company Name"" instead of site name and subpage titles while navigating - see here [^Video 2025-05-22 17.46.36.mp4]
+
+*Expected result:* The tab title should dynamically reflect the site branding (e.g., ""RoomBridge""), and it should also include relevant subpage information (e.g., ""RoomBridge – Sign Up"", ""RoomBridge – Listings"")","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,"22/May/25 2:47 PM;m13.hasan;Video 2025-05-22 17.46.36.mp4;https://jira.a1qa.com/secure/attachment/2646685/Video+2025-05-22+17.46.36.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if3888:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,"25/May/25 1:20 PM;e.sheremetyev;GUI;;;","25/May/25 7:15 PM;m13.hasan;Understood mentor;;;",,
+Password Field: Eye Icon for viewing password missing in Chrome but available in Edge Browser,QATC-924149,3830401,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,22/May/25 2:36 PM,25/May/25 7:14 PM,14/Jun/25 2:49 PM,25/May/25 1:20 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application in Chrome Browser: [https://roombridge.demohoster.com/]
+ # Navigate to either the Sign-Up or Login page
+
+ # Locate the Password input field
+
+ # Observe the presence or absence of the eye icon (show/hide password)
+
+ # Repeat the same steps in Microsoft Edge
+
+*Actual result:* Eye Icon for viewing password missing in Chrome but available in Edge Browser - see here [^Video 2025-05-22 17.25.18.mp4]
+
+*Expected result:* The password field should consistently display the eye icon across all supported browsers (including Chrome and Edge), allowing users to toggle visibility of their input","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,"22/May/25 2:34 PM;m13.hasan;Video 2025-05-22 17.25.18.mp4;https://jira.a1qa.com/secure/attachment/2646675/Video+2025-05-22+17.25.18.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if386o:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,"25/May/25 1:18 PM;e.sheremetyev;Where did you  find information that you have to test using Edge Browser?;;;","25/May/25 1:20 PM;e.sheremetyev;it's enhancement here;;;","25/May/25 7:14 PM;m13.hasan;Sorry mentor, I should ask question before cross browser testing ;;;",
+Sign-Up Page: Add confirm password field and password visibility toggle option,QATC-924129,3830351,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,22/May/25 1:26 PM,25/May/25 1:22 PM,14/Jun/25 2:49 PM,25/May/25 1:22 PM,,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to the Sign Up page 
+ # Pay attention to the password field - see here [^Screenshot 2025-05-22 162203.png]
+
+*Expected behavior:*
+ * A Confirm Password field should be added below the Password field to ensure users enter their password correctly
+
+ * A password visibility toggle icon (eye icon) should be available inside the Password field to show/hide the input for user convenience ","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,"22/May/25 1:24 PM;m13.hasan;Screenshot 2025-05-22 162203.png;https://jira.a1qa.com/secure/attachment/2646619/Screenshot+2025-05-22+162203.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if37wg:",9223372036854775807,,,,,,,,,5-Enhancement,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,
+Availability Section: Date Picker Missing and Month Selection Limited to May 2025 – February 2026,QATC-924122,3830339,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,22/May/25 1:12 PM,25/May/25 1:12 PM,14/Jun/25 2:49 PM,25/May/25 1:12 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to Your Listings
+
+ # Select a listing and go to the Availability section
+
+ # Try selecting a date range using the calendar - see here [^Video 2025-05-22 16.11.18.mp4]
+
+ 
+
+*Actual result:* Date Picker Missing and Month Selection Limited to May 2025 – February 2026
+
+*Expected result:* A date picker should be available to allow easy selection of start and end dates, and the system should allow selection of a broader range of months beyond just May 2025 to February 2026 for more flexibility in availability planning","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,"22/May/25 1:12 PM;m13.hasan;Video 2025-05-22 16.11.18.mp4;https://jira.a1qa.com/secure/attachment/2646609/Video+2025-05-22+16.11.18.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if37ts:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,
+"Details page: The ""Save"" button shows visual glitches when hovered or clicked",QATC-924035,3830120,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,22/May/25 8:17 AM,25/May/25 1:15 PM,14/Jun/25 2:49 PM,25/May/25 1:15 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Select any listing and go to the Details page
+ # Hover over or click the ""Save"" button - see here [^Video 2025-05-22 11.16.13.mp4
+
+*Actual result:* The ""Save"" button shows visual glitches when hovered or clicked
+
+*Expected result:* The ** ""Save"" button should respond visually in a consistent manner when hovered or clicked, without showing any distortion or misalignment","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,"22/May/25 8:16 AM;m13.hasan;Video 2025-05-22 11.16.13.mp4;https://jira.a1qa.com/secure/attachment/2646422/Video+2025-05-22+11.16.13.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|if36io:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,
+"Address Page:The ""Update Map"" button shows visual glitches when hovered or clicked",QATC-924034,3830119,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,22/May/25 8:11 AM,25/May/25 1:15 PM,14/Jun/25 2:49 PM,25/May/25 1:15 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Select any listing and go to the Address section
+
+ # Hover over or click the ""Update Map"" button - see here [^Video 2025-05-22 11.10.57.mp4]
+
+*Actual result:* The ""Update Map"" button shows visual glitches when hovered or clicked
+
+*Expected result:* The ** ""Update Map"" button should respond visually in a consistent manner when hovered or clicked, without showing any distortion or misalignment"," ** *OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,"22/May/25 8:11 AM;m13.hasan;Video 2025-05-22 11.10.57.mp4;https://jira.a1qa.com/secure/attachment/2646421/Video+2025-05-22+11.10.57.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|if36ig:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,
+"Pricing and Terms Page: Changing the Max Stay in Short Stays automatically modifies the Min Stay in Long Stays, and vice versa",QATC-924030,3830115,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,22/May/25 7:57 AM,25/May/25 1:12 PM,14/Jun/25 2:49 PM,25/May/25 1:12 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to Your Listings
+
+ # Open a listing and go to the Pricing and Terms section
+
+ # Select the ""Both short stays and long stays"" option
+
+ # Change the Maximum Stay value under Short Stays
+
+ # Observe the Minimum Stay value under Long Stays
+
+ # Repeat the same by changing the Minimum Stay in Long Stays and observe the value in Short Stays
+
+*Actual result:* Changing the Max Stay in Short Stays automatically modifies the Min Stay in Long Stays, and vice versa - see here [^Video 2025-05-22 10.34.14.mp4]
+
+*Expected result:* Users should be able to independently set Max Stay for Short Stays and Min Stay for Long Stays without one value affecting the other"," ** *OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,"22/May/25 7:53 AM;m13.hasan;Video 2025-05-22 10.34.14.mp4;https://jira.a1qa.com/secure/attachment/2646416/Video+2025-05-22+10.34.14.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if36hk:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,
+"Pricing and Terms Page: In the Cancellation policy, the help tooltip displays “Text for this help bubble is TBD” instead of relevant information",QATC-924026,3830111,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,FAD,,m13.hasan,m13.hasan,22/May/25 7:41 AM,25/May/25 1:15 PM,14/Jun/25 2:49 PM,25/May/25 1:15 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to Your Listings
+
+ # Select any listing and go to the Pricing and Terms section
+
+ # Hover over the question mark icon next to the Cancellation policy dropdown
+
+*Actual result:* In the Cancellation policy, the help tooltip displays “Text for this help bubble is TBD” instead of relevant information - see here [^Screenshot 2025-05-22 080645.png]
+
+*Expected result:* The tooltip should provide a clear and helpful description of each cancellation policy option","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,"22/May/25 7:41 AM;m13.hasan;Screenshot 2025-05-22 080645.png;https://jira.a1qa.com/secure/attachment/2646409/Screenshot+2025-05-22+080645.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|if36go:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,
+"Details Page: ""Children on premises"" field accepts negative values instead of only positive numbers",QATC-924020,3830105,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,22/May/25 7:27 AM,25/May/25 7:12 PM,14/Jun/25 2:49 PM,25/May/25 1:04 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to Your Listings
+
+ # Enter any existing listing and go to the Details tab
+
+ # Locate the Children on premises field
+
+ # Enter a negative numeric value (e.g., -2)
+
+ # Click Save
+
+*Actual result:* ""Children on premises"" field accepts negative values instead of only positive numbers - see here [^Video 2025-05-22 10.25.03.mp4]
+
+*Expected result:* The field should only accept positive numbers, and any negative input should be restricted or display a clear validation message"," ** 
+
+*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,"22/May/25 7:26 AM;m13.hasan;Video 2025-05-22 10.25.03.mp4;https://jira.a1qa.com/secure/attachment/2646401/Video+2025-05-22+10.25.03.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if36fc:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,"25/May/25 1:04 PM;e.sheremetyev;average;;;","25/May/25 7:12 PM;m13.hasan;Understood mentor;;;",,
+Delete listing: No warning or confirmation message appears before deletion inside any of the listings,QATC-923991,3830073,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,22/May/25 5:38 AM,25/May/25 7:11 PM,14/Jun/25 2:49 PM,25/May/25 1:04 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to Your Listings
+
+ # Open any listing (e.g., ""Apartment for Single Student"")
+
+ # Click on the Delete this listing link at the top - see here [^Screenshot 2025-05-22 075728.png]
+
+*Actual result:* No warning or confirmation message appears before deletion inside any of the listings, which could lead to accidental data loss - see here [^Video 2025-05-22 08.37.21.mp4]
+
+*Expected result:* Clicking on ""Delete this listing"" should trigger a confirmation prompt (e.g., ""Are you sure you want to delete this listing?"") to prevent unintended deletions"," ** 
+
+*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,"22/May/25 5:37 AM;m13.hasan;Screenshot 2025-05-22 075728.png;https://jira.a1qa.com/secure/attachment/2646374/Screenshot+2025-05-22+075728.png","22/May/25 5:38 AM;m13.hasan;Video 2025-05-22 08.37.21.mp4;https://jira.a1qa.com/secure/attachment/2646373/Video+2025-05-22+08.37.21.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if3688:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,"25/May/25 1:04 PM;e.sheremetyev;average;;;","25/May/25 7:11 PM;m13.hasan;Understood mentor;;;",,
+"Description field: The system counts words instead of characters, and displays a message saying ""No words. Our most effective listings often have more than 100 words.""",QATC-923900,3829961,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,FAD,,m13.hasan,m13.hasan,21/May/25 10:12 PM,25/May/25 1:12 PM,14/Jun/25 2:49 PM,25/May/25 1:12 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Go to the Your Listings section
+
+ # Select Manage the listing on any listing (e.g., ""Apartment for Students Type 2"")
+ # Locate the Description input field
+
+ # Start typing a long text and observe the word counter and the message below - see here [^Video 2025-05-22 01.10.26.mp4]
+
+*Actual result:* The system counts words instead of characters, and displays a message saying ""No words. Our most effective listings often have more than 100 words.""
+
+*Expected result:* The system should count characters instead of words, and the message should reflect the 700-character limit to match the input validation and guide the user correctly","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,"21/May/25 10:11 PM;m13.hasan;Video 2025-05-22 01.10.26.mp4;https://jira.a1qa.com/secure/attachment/2646228/Video+2025-05-22+01.10.26.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|if35jc:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,
+"Login flow – No option to recover user account after it is blocked, preventing access during login",QATC-923872,3829927,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,21/May/25 9:15 PM,25/May/25 7:03 PM,14/Jun/25 2:49 PM,25/May/25 1:01 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to the Login page
+ # Attempt to log in with the registered email and password after two days
+
+*Actual result:* No option to recover the user account after it is blocked, preventing access during login - see here [^Video 2025-05-17 23.44.51.mp4]
+
+*Expected result:* When a blocked user tries to log in, the system should have an option to resend the verification email, allowing the user to confirm their account and regain access","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,"21/May/25 9:13 PM;m13.hasan;Video 2025-05-17 23.44.51.mp4;https://jira.a1qa.com/secure/attachment/2646185/Video+2025-05-17+23.44.51.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if35bs:",9223372036854775807,,,,,,,,,1-Critical,,,,,,,,,,,,,,,,,,,,0.0,,,,,"25/May/25 1:01 PM;e.sheremetyev;General: User can't confirm his account.;;;","25/May/25 7:03 PM;m13.hasan;Understood mentor
+
+ ;;;",,
+"Webpage layout: The webpage is not responsive and some content disappears, breaking the layout when zoomed to 175%",QATC-923773,3829677,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,21/May/25 1:55 PM,25/May/25 7:11 PM,14/Jun/25 2:49 PM,25/May/25 1:09 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Zoom in to 175% using the browser zoom controls 
+
+ # Observe the page layout and visible content - see here [^Video 2025-05-21 16.54.16.mp4]
+
+*Actual result:* The webpage is not responsive, and some content disappears, breaking the layout when zoomed to 175%
+
+*Expected result:* The webpage should remain fully responsive and display all interface elements correctly, even when zoomed in, ensuring accessibility and proper layout across different zoom levels","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,"21/May/25 1:54 PM;m13.hasan;Video 2025-05-21 16.54.16.mp4;https://jira.a1qa.com/secure/attachment/2645919/Video+2025-05-21+16.54.16.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|if33tk:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,"25/May/25 1:09 PM;e.sheremetyev;minor;;;","25/May/25 7:11 PM;m13.hasan;Understood mentor;;;",,
+"Photos section: The text cursor remains visible in the input field after saving the picture name, suggesting the field is still active, even though the input has been saved",QATC-923652,3829382,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,20/May/25 10:01 PM,26/May/25 1:30 PM,14/Jun/25 2:49 PM,25/May/25 1:13 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to Your Listings
+ # Navigate to the Photos section
+
+ # Enter a name for the uploaded picture
+
+ # Click Save
+
+ # Observe the input field after saving - see here [^Video 2025-05-21 00.39.59.mp4]
+
+*Actual result:* The text cursor remains visible ** in the input field after saving the picture name, suggesting the field is still active, even though the input has been saved
+
+*Expected result:* Once the name is saved, the cursor should disappear, indicating that the field is no longer active and editing is complete","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,"20/May/25 10:00 PM;m13.hasan;Video 2025-05-21 00.39.59.mp4;https://jira.a1qa.com/secure/attachment/2645711/Video+2025-05-21+00.39.59.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|if321k:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,"25/May/25 1:13 PM;e.sheremetyev;What happened with steps?;;;","26/May/25 1:30 PM;m13.hasan;*Steps in corrected order:* 
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to Your Listings
+ # Navigate to the Photos section
+ # Enter a name for the uploaded picture
+ # Click Save
+ # Observe the input field after saving - see here [^Video 2025-05-21 00.39.59.mp4];;;",,
+"Guide Me Page:  In checklist ""Respond to the email we sent you to confirm your email address"" item is not clickable",QATC-923517,3828976,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,20/May/25 1:00 PM,25/May/25 7:09 PM,14/Jun/25 2:49 PM,25/May/25 1:08 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to the Guide Me page
+
+ # Locate the checklist item “Respond to the email we sent you to confirm your email address”
+
+ # Try clicking on the item - see here [^Video 2025-05-20 15.22.32.mp4]
+
+*Actual result:* In checklist ""Respond to the email we sent you to confirm your email address"" item is not clickable for navigating to that specific page 
+
+*Expected result:*  In checklist ""Respond to the email we sent you to confirm your email address"" item should be clickable and guide the user to the email confirmation process","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,"20/May/25 12:24 PM;m13.hasan;Video 2025-05-20 15.22.32.mp4;https://jira.a1qa.com/secure/attachment/2645378/Video+2025-05-20+15.22.32.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if2zj4:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,"25/May/25 1:08 PM;e.sheremetyev;minor;;;","25/May/25 7:09 PM;m13.hasan;Understood mentor;;;",,
+List your place page: Mandatory fields do not display an asterisk indicator to inform users while adding details ,QATC-923496,3828929,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,20/May/25 11:46 AM,25/May/25 1:13 PM,14/Jun/25 2:49 PM,25/May/25 1:13 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to the List Your Place page
+
+ # Observe all the fields available on the form
+
+ # Check for any visual indication (like an asterisk) beside the required fields
+
+*Actual result:* Mandatory fields do not display an asterisk indicator to inform users while adding details - see here [^Screenshot 2025-05-20 144406.png]
+
+*Expected result:* All required fields should be clearly marked with an asterisk (*) or another visual indicator to inform users that they must be filled in before submission","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,"20/May/25 11:45 AM;m13.hasan;Screenshot 2025-05-20 144406.png;https://jira.a1qa.com/secure/attachment/2645332/Screenshot+2025-05-20+144406.png",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,GUI,,,,,,,,,,,,,,,,,,,,,,,,"0|if2z8w:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,
+Description page: “description” field accepts over 255 characters without validation message and crashes after submission and redirects to an error page,QATC-923145,3827990,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,17/May/25 12:37 AM,25/May/25 7:08 PM,14/Jun/25 2:49 PM,25/May/25 1:03 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to the Your Listings section
+ # Go to the Description page
+
+ # In the Description field, enter more than 255 characters
+
+ # Click the Save or Next button
+
+*Actual result:* “description” field accepts over 255 characters without a validation message and crashes after submission, and redirects to an error page - see here [^Video 2025-05-17 03.33.06.mp4]
+
+*Expected result:* When the user enters more than 255 characters in the Description field, the system should immediately display a validation message and prevent form submission","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,"17/May/25 12:34 AM;m13.hasan;Video 2025-05-17 03.33.06.mp4;https://jira.a1qa.com/secure/attachment/2644569/Video+2025-05-17+03.33.06.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if2tzc:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,"25/May/25 1:03 PM;e.sheremetyev;average;;;","25/May/25 7:08 PM;m13.hasan;Understood mentor
+
+ ;;;",,
+Description page: “Description” field accepts only 255 characters instead of 700 as specified in the requirements,QATC-923112,3827943,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,16/May/25 10:12 PM,25/May/25 1:08 PM,14/Jun/25 2:49 PM,25/May/25 1:08 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to Your Listings
+ # Select Manage the listing on any listing (e.g., ""Apartment for Students Type 2"")
+ # Go to the Description page
+ # Enter a long text (more than 255 characters) in the Description field
+
+ # Try to save the description
+
+*Actual result:*  “Description” field accepts only 255 characters instead of 700 as specified in the requirements - see here [^Video 2025-05-17 01.08.45.mp4]
+
+*Expected result:* The Description field should accept up to 700 characters as specified in the requirements","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,"16/May/25 10:10 PM;m13.hasan;Video 2025-05-17 01.08.45.mp4;https://jira.a1qa.com/secure/attachment/2644519/Video+2025-05-17+01.08.45.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if2tow:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,
+"Details page: System prevents the user from accessing the Pricing and Terms page while selecting ""entire home/apartment"" in the accommodation option, causing the block of the checklist for this particular option",QATC-923096,3827921,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,16/May/25 9:15 PM,25/May/25 7:07 PM,14/Jun/25 2:49 PM,25/May/25 1:00 PM,1.0,,RoomBridge,,0,,"*Steps:* 
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to Your Listings
+ # Select Manage the listing on any listing (e.g., ""Apartment for Students Type 3"")
+ # Go to the Details page
+ # Under Accommodation, select ""Entire home/apartment""
+ # Try to proceed to the Pricing and Terms page
+
+*Actual result:* System prevents the user from accessing the Pricing and Terms page while selecting ""entire home/apartment"" in the accommodation option, causing the block of the checklist for this particular option - see here [^Video 2025-05-16 23.19.52.mp4]
+
+*Expected result:* User should be able to access the Pricing and Terms page while selecting ""entire home/apartment"" in the accommodation option, and the checklist should be checked for this field","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,"16/May/25 9:13 PM;m13.hasan;Video 2025-05-16 23.19.52.mp4;https://jira.a1qa.com/secure/attachment/2644499/Video+2025-05-16+23.19.52.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if2tk0:",9223372036854775807,,,,,,,,,1-Critical,,,,,,,,,,,,,,,,,,,,0.0,,,,,"25/May/25 12:58 PM;e.sheremetyev;Summary should be short;;;","25/May/25 12:59 PM;e.sheremetyev;major;;;","25/May/25 12:59 PM;e.sheremetyev;Your Listings: Pricing and Terms: Server error occurs when trying to open page for Entire House accomodation.
+
+Summary should be like this;;;","25/May/25 7:07 PM;m13.hasan;Understood mentor
+
+ ;;;"
+"Availability page: Selecting a date range doesn't save while clicking, causing Availability schedule checklist unchecked and listing stuck in hidden status",QATC-922975,3827397,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,16/May/25 8:21 AM,25/May/25 12:57 PM,14/Jun/25 2:49 PM,25/May/25 12:57 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to Your Listings
+ # Select Manage the listing on any listing (e.g., ""Apartment for Students Type 2"")
+ # Go to the Availability page
+ # Try selecting a date range by clicking a beginning date and an end date
+ # Check the Guide Me checklist
+
+*Actual result:* Selecting a date range doesn't work while clicking a begin date and an end date, causing the Availability schedule checklist unchecked and listing stuck in hidden status - see here [^Video 2025-05-16 10.46.37.mp4]
+
+*Expected result:* The selected date range should be saved, the availability schedule checklist should be marked automatically as completed, and the listing should become eligible to be visible
+
+ ","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,"16/May/25 7:47 AM;m13.hasan;Video 2025-05-16 10.46.37.mp4;https://jira.a1qa.com/secure/attachment/2644150/Video+2025-05-16+10.46.37.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if2qeg:",9223372036854775807,,,,,,,,,1-Critical,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,
+"Listings page: User’s valid address doesn’t update on the map, causing the address checklist unchecked and listing stuck in hidden status",QATC-922832,3827244,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,FAD,,m13.hasan,m13.hasan,16/May/25 12:46 AM,25/May/25 12:56 PM,14/Jun/25 2:49 PM,25/May/25 12:56 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to Your Listings
+
+ # Select Manage the listing on any listing (e.g., ""Apartment for Students Type 2"")
+
+ # Go to the Address tab
+
+ # Enter a valid address with the correct country and details
+
+ # Click Update map and return to the Guide Me section - see here [^Screenshot 2025-05-16 033443.png]
+
+*Actual result:* User’s valid address doesn’t update on the map, causing the address checklist unchecked and listing stuck in hidden status - see here [^Video 2025-05-16 03.44.19.mp4]
+
+*Expected result:* A valid address entered by the user should be updated and shown correctly on the map, and the checklist item should automatically be checked","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,"16/May/25 12:35 AM;m13.hasan;Screenshot 2025-05-16 033443.png;https://jira.a1qa.com/secure/attachment/2643908/Screenshot+2025-05-16+033443.png","16/May/25 12:45 AM;m13.hasan;Video 2025-05-16 03.44.19.mp4;https://jira.a1qa.com/secure/attachment/2643907/Video+2025-05-16+03.44.19.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if2pgg:",9223372036854775807,,,,,,,,,1-Critical,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,
+"Your Listing page: Country field always displays ""United States"" by default in the Address section, despite the user's own country name",QATC-922773,3827182,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,15/May/25 10:58 PM,26/May/25 1:22 PM,14/Jun/25 2:49 PM,25/May/25 1:02 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application:  [https://roombridge.demohoster.com/]
+ # Log in to the application
+
+ # Create a new listing
+
+ # Enter a country name in the Country field and complete the remaining fields
+
+ # Save the listing
+
+ # Go to Your Listings → Address section
+
+ # Observe the country field
+
+*Actual result:* Country field always displays ""United States"" by default in the Address section, despite the user's own country name - see here [^Video 2025-05-16 00.00.33.mp4]
+
+*Expected result:* The country field should display the correct country name that was entered by the user when creating the listing","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,"15/May/25 10:56 PM;m13.hasan;Video 2025-05-16 00.00.33.mp4;https://jira.a1qa.com/secure/attachment/2643811/Video+2025-05-16+00.00.33.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if2p2o:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,"25/May/25 1:02 PM;e.sheremetyev;what happened with steps?;;;","26/May/25 1:22 PM;m13.hasan;*Steps in correct format:*
+ # Open the application:  [https://roombridge.demohoster.com/]
+ # Log in to the application
+ # Create a new listing
+ # Enter a country name in the Country field and complete the remaining fields
+ # Save the listing
+ # Go to Your Listings → Address section
+ # Observe the country field;;;",,
+"Your Listing page: ""Manage the Listing"" and ""Preview the Listing"" buttons navigate to the same page",QATC-922741,3827138,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,15/May/25 10:03 PM,25/May/25 7:18 PM,14/Jun/25 2:49 PM,25/May/25 1:07 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://photostudio.demohoster.com/]
+ # Log in to the application
+
+ # Navigate to the Your Listing section
+
+ # Select any of the listings
+ # Click on ""Manage the Listing""
+
+ # Click on ""Preview the Listing""
+
+ # Observe the redirection behavior of both buttons
+
+*Actual result:* ""Manage the Listing"" and ""Preview the Listing"" buttons navigate to the same page - see here [^Video 2025-05-16 01.01.29.mp4]
+
+*Expected result:* ""Manage the Listing"" should take the user to the editable listing management view, while ""Preview the Listing"" should show a read-only preview of how the listing appears to others","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85
+
+ ",,,,,,,,,,Leads and Reporter only,"15/May/25 10:02 PM;m13.hasan;Video 2025-05-16 01.01.29.mp4;https://jira.a1qa.com/secure/attachment/2643766/Video+2025-05-16+01.01.29.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if2osw:",9223372036854775807,,,,,,,,,3-Average,,,,,,,,,,,,,,,,,,,,0.0,,,,,"15/May/25 10:59 PM;m13.hasan;*Correction of the webpage address:*
+ # Open the application:  [https://roombridge.demohoster.com/];;;","25/May/25 7:18 PM;m13.hasan;Understood mentor;;;",,
+Sign-Up Page: No verification email is sent when registering with a valid email address to create a new account,QATC-922676,3827063,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Duplicate,,m13.hasan,m13.hasan,15/May/25 8:34 PM,25/May/25 1:01 PM,14/Jun/25 2:49 PM,25/May/25 1:01 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to the Sign Up page
+ # Enter a valid and previously registered email address in the Email field
+
+ # Complete the remaining fields and submit the form
+
+ # Check the email inbox (and spam folder) for the verification message
+
+*Actual result:* No verification email is sent when registering with a valid email address to create a new account - see here [^Video 2025-05-15 23.23.21.mp4]
+
+*Expected result:* Upon registration using a valid email, the system should send a verification email to the user to complete account verification as specified - [^Screenshot 2025-05-15 232919.png]","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,"15/May/25 8:30 PM;m13.hasan;Screenshot 2025-05-15 232919.png;https://jira.a1qa.com/secure/attachment/2643690/Screenshot+2025-05-15+232919.png","15/May/25 8:25 PM;m13.hasan;Video 2025-05-15 23.23.21.mp4;https://jira.a1qa.com/secure/attachment/2643691/Video+2025-05-15+23.23.21.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if2ocg:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,"25/May/25 1:01 PM;e.sheremetyev;QATC-923872;;;",,,
+"Sign Up form: Firstname, Lastname, and Password fields allow special characters, though documentation specifies alpha-only input ",QATC-922661,3827040,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,FAD,,m13.hasan,m13.hasan,15/May/25 7:30 PM,25/May/25 1:12 PM,14/Jun/25 2:49 PM,25/May/25 1:12 PM,1.0,,RoomBridge,,0,,"*Steps:* 
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to the Sign Up page
+ # In the form, enter special characters (e.g., @, #, $, +, etc.) in Firstname, Lastname, and Password fields:
+ # Pay attention to the input fields
+
+*Actual result:* Firstname, Lastname, and Password fields allow special characters, though documentation specifies alpha-only input - see here [^Video 2025-05-15 22.28.15.mp4]
+
+*Expected result:* These fields should only accept alphabetical characters (alpha type) and reject special characters as per the specification","*OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,"15/May/25 7:29 PM;m13.hasan;Video 2025-05-15 22.28.15.mp4;https://jira.a1qa.com/secure/attachment/2643661/Video+2025-05-15+22.28.15.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if2o7c:",9223372036854775807,,,,,,,,,4-Minor,,,,,,,,,,,,,,,,,,,,0.0,,,,,,,,
+"Sign Up page: ""Connect with Facebook"" button doesn't redirect to the Facebook login page, preventing the user from signing up through Facebook",QATC-922356,3826301,Bug,Resolved,QATC,Training Center,software,a.golubovich,,,Major,Fixed,,m13.hasan,m13.hasan,14/May/25 9:11 PM,25/May/25 7:01 PM,14/Jun/25 2:49 PM,25/May/25 1:02 PM,1.0,,RoomBridge,,0,,"*Steps:*
+ # Open the application: [https://roombridge.demohoster.com/]
+ # Navigate to the Sign Up page
+ # Try to Sign Up through Facebook by clicking the ""Connect with Facebook"" button
+ # Observe the response of the webpage
+
+*Actual result:* Sign Up page: ""Connect with Facebook"" button doesn't redirect to the Facebook login page, preventing the user from signing up through Facebook - see here [^Video 2025-05-14 23.33.40.mp4]
+
+*Expected result:* Clicking the ""Connect with Facebook"" button should redirect to the Facebook login page and allow the user to sign up through their Facebook account"," ** *OS:* Windows 11 Home 64-bit
+
+*Browser:* Google Chrome Version 135.0.7049.85",,,,,,,,,,Leads and Reporter only,"14/May/25 9:07 PM;m13.hasan;Video 2025-05-14 23.33.40.mp4;https://jira.a1qa.com/secure/attachment/2643133/Video+2025-05-14+23.33.40.mp4",,,,,,,,,,,,,,,,,,,,,,,,,,,,All,,,,,,,,,,,,,,,Functional,,,,,,,,,,,,,,,,,,,,,,,,"0|if2jow:",9223372036854775807,,,,,,,,,2-Major,,,,,,,,,,,,,,,,,,,,0.0,,,,,"25/May/25 1:03 PM;e.sheremetyev;|{color:#000000}Sign Up: Users can't sign up via facebook.{color}|;;;","25/May/25 1:03 PM;e.sheremetyev;Short summary should be like this;;;","25/May/25 7:01 PM;m13.hasan;Understood mentor;;;",
